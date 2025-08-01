@@ -33,6 +33,6 @@ and L2 to enter I2C mode without detecting pull-up.
 
 7) MCU operation process: INT continuous high 100ms can read and write the I2C register, you can initialize the register (need to modify the special function to modify the register, if you do not need to modify the register can not write the register) and then read the IC internal information (power, charge and discharge state, key state) characteristic requirements (such as special indicator, charge and discharge management, fast charge request management) operation.
 
-8) IP5356 has two groups of I2C addresses, namely 0xEA and 0xE8. When reading and writing registers, you need to check whether the I2C address corresponding to the current register address is 0xE8 or 0Xea.
+8) IP5356 has two groups of I2C addresses, namely 0xEA and 0xE8. When reading and writing registers, you need to check whether the I2C address corresponding to the current register address is 0xE8 or 0XEA.
 
 9) The default value of the IP5356 register is only for customers to refer to the configuration of the current function. If you need to operate the register, you need to read it out and calculate it before writing it back to the register.
