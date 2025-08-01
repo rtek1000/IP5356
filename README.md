@@ -12,3 +12,7 @@ Fortunately the manufacturer sent me the I2C register file for the IP5356 IC:
 - (The email I sent had a Chinese translation followed by the English text, asking where to find the I2C part information)
 
 ![img](https://raw.githubusercontent.com/rtek1000/IP5356/refs/heads/main/Doc/Contact.png)
+
+#### Note:
+
+- ##### If you want to modify a register of IP5356, you need to read out the value of the corresponding register first, perform the and or operation on the bit to be modified, and then write the calculated value into this register, ensure that only the bit to be modified and the value of other open bits cannot be changed at will. The default value of the register is based on the read value. The IC default values may vary from batch to batch.
